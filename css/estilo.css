@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(45deg, #8ec5fc, #e0c3fc);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#container {
+  padding: 20px;
+}
+
+#emocion {
+  margin: 20px auto;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.ruleta-contenedor {
+  display: flex; /* Flexbox para distribuir hijos */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra la ruleta inicialmente */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  position: relative; /* Para manejar el layout dinámico */
+}
+
+.ruleta-container {
+  width: 300px; /* Tamaño fijo de la ruleta */
+  position: relative;
+}
+
+
+.imagen-emocion img {
+  display: none;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.ruleta-contenedor.mostrar-imagen {
+  justify-content: flex-start; /* Reposiciona cuando aparece la imagen */
+}
+
+.imagen-emocion.mostrar {
+  display: block; /* Muestra la imagen */
+}
+
+
+.vara {
+  height: 60px;
+  width: 10px;
+  background-color: #f8f8f8;
+  margin: auto;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+}
+
+#ruleta {
+  width: 300px;
+  height: 300px;
+  transition: transform 5s ease-out;
+  cursor: pointer;
+}
+
+.elije {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  animation: brillo 1.5s infinite alternate;
+}
+@keyframes brillo {
+  from {
+    text-shadow: 0 0 10px #5186f8, 0 0 20px #5186f8, 0 0 30px #5186f8;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+  }
+}
+
+#decoraciones {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.decoracion {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.decoracion:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}

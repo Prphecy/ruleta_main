@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de la Ruleta de Emociones</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="container">
+      <div id="emocion">
+        <p class="elije">Bienvenido al juego de la ruleta, 
+          por favor girala para conocer una emoción
+        </p>
+      </div>
+      <div class="ruleta-contenedor">
+        <div class="ruleta-container">
+          <div class="vara"></div>
+          <img src="image/ruleta1.png" id="ruleta" alt="Ruleta de Emociones" />
+        </div>
+        <div class="imagen-emocion">
+          <img id="imagen-consejo" src="" alt="" />
+        </div>
+      </div>
+      <div id="decoraciones">
+        <img src="image/rabia-icon.png" alt="Rabia" class="decoracion" />
+        <img src="image/tristeza-icon.png" alt="Tristeza" class="decoracion" />
+        <img src="image/calma-icon.png" alt="Calma" class="decoracion" />
+        <img src="image/alegria-icon.png" alt="Alegría" class="decoracion" />
+        <img src="image/miedo-icon.png" alt="Miedo" class="decoracion" />
+        <img src="image/amor-icon.png" alt="Amor" class="decoracion" />
+        <img
+          src="image/indiferencia-icon.png"
+          alt="Indiferencia"
+          class="decoracion"
+        />
+        <img src="image/sorpresa-icon.png" alt="Sorpresa" class="decoracion" />
+      </div>
+      
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
