@@ -48,14 +48,14 @@ function calcular(rand) {
   }, 5000);
   function emocion(emociones) {
     const consejos = {
-      RABIA: "Respira profundamente, cuenta hasta 10 y trata de identificar qué te hizo enojar.",
-      TRISTEZA: "Habla con alguien de confianza sobre tus sentimientos y no te aisles.",
-      CALMA: "Aprovecha este momento para meditar o disfrutar de algo que te gusta.",
-      ALEGRIA: "Comparte tu felicidad con los demás y disfruta del momento.",
-      MIEDO: "Recuerda que está bien tener miedo, pero intenta enfrentarlo poco a poco.",
-      AMOR: "Expresa tu amor con gestos simples, como un abrazo o unas palabras bonitas.",
-      INDIFERENCIA: "Reflexiona si algo está bloqueando tus emociones y busca reconectar contigo mismo.",
-      SORPRESA: "Aprovecha la emoción para explorar algo nuevo o inusual en tu día."
+      RABIA: "Piensa y respira profundamente, cuenta hasta 10 y trata de identificar qué te hizo enojar.",
+      TRISTEZA: "Piensa y habla con alguien de confianza sobre tus sentimientos y no te aisles.",
+      CALMA: "Piensa y aprovecha este momento para meditar o disfrutar de algo que te gusta.",
+      ALEGRIA: "Piensa y comparte tu felicidad con los demás y disfruta del momento.",
+      MIEDO: "Piensa y recuerda que está bien tener miedo, pero intenta enfrentarlo poco a poco.",
+      AMOR: "Piensa y expresa tu amor con gestos simples, como un abrazo o unas palabras bonitas.",
+      INDIFERENCIA: "Piensa y reflexiona si algo está bloqueando tus emociones y busca reconectar contigo mismo.",
+      SORPRESA: "Piensa y aprovecha la emoción para explorar algo nuevo o inusual en tu día."
     };
   
     const imagenes = {
